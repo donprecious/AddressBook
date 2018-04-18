@@ -1,0 +1,132 @@
+body{
+ background:#71d0df;
+    color: #ffffff;
+}
+.content{
+    width: 80%;
+    background-color: #077d90;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.content h1,h2,h3{
+    text-align: center;
+}
+.content ul.nav>li.nav-item a{
+   background-color: #71d0df;
+   margin-right: 5px;
+   border-radius: 4px;
+}
+.content ul.nav>li.nav-item a:hover{
+    cursor: pointer;
+   color:#0d7e86;
+   background-color:#0f4f58
+}
+.content a{
+    color:#061d1d;
+}
+.content  input[type="search"]{
+    border:1px solid #ffffff;
+    outline: 0px;
+  background-color:#2cb4c9;
+
+
+}
+.content  input[type="search"]:focus{
+   font-size:1.2em;
+}
+.content a.btn{
+    background-color:#63004a;
+
+}
+.contact .item{
+    margin-top: 5px;
+border:1px solid #e1fdfd;
+
+padding:10px;
+font-size:1.4em;
+}
+.contact .item:hover{
+   border:3px solid #ffffff;
+}
+.contact .item small{
+ font-size: 0.5em;
+ font-weight: bold;
+}
+.contact{
+    position: relative;
+    box-sizing: border-box;
+}
+
+.contact a.view, .view{
+    cursor: pointer;
+    box-sizing: border-box;
+    position: absolute;
+   
+    padding: 4px;
+    color:#ffffff;
+    border-radius: 5px;
+    font-size:0.8em;
+right:10px;
+}
+
+.contact a.view{
+    background-color:#0f4f58;
+    padding: 4px;
+}
+.contact a.view:hover{
+    color:#47e9e9;
+}
+.detail p{
+    margin-top: 0;
+   font-size: 1.5em;
+   font-weight: bold;
+
+}
+.modal-content{
+    background-color: #0f4f58;
+}
+.form-control{
+    background-color:transparent; 
+    border-radius: 0;
+    border: 0;
+    border-bottom: 2px solid #ffffff;
+}
+::-moz-placeholder{
+    opacity: 1;
+}
+.form-control:focus{
+    outline: none;
+    border-color:#687274;
+    box-shadow: none;
+}
+
+:-moz-placeholder{
+    color:#ffffff;
+}
+::-moz-placeholder{
+    color:#ffffff;
+}
+:-webkit-input-placeholder{
+    color:#ffffff;
+}
+::-webkit-input-placeholder{
+    color:#ffffff;
+}
+:-ms-input-placeholder{
+color:#ffffff;
+}
+::-ms-input-placeholder{
+color:#ffffff;
+}
+:placeholder-shown{
+color:#ffffff;
+
+}
+::placeholder-shown{
+color:#ffffff;
+
+}
