@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href=/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-reboot.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/site.css"/>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/doc.js"></script>
+    <!--
+    <script>
+        
+        $(document).ready( function(){
+            LoadContact();
+                 $(".item").click(function (e) {
+                     var id = $(this).attr('id');
+                     pushData(id);
+                       $("#name").text(currentContact["Name"]);
+                        $("#address").text(currentContact["Address"]);
+                         $("#phoneno").text(currentContact["Phoneno"]);
+                    });
+                    //remove contact
+                     $("#delete").click(function (e){
+                         var cid =  $("#Cid").text();
+                         console.log(cid);
+                          removeContact(cid);
+                            clearContact();
+                           LoadContact();
+                     });
+                   //add new contact;
+                   $("#addNew").click(function(e){
+                       var name = $("#Nname").val();
+                       var phone = $("#Nphone").val();
+                       var address = $("#Naddress").text();
+                       addContact(name,phone,address);
+                        clearContact();
+                        LoadContact();
+                   })
+             
+        });
+           
+        
+    </script>
+    -->
+</head>
+
+<body>
+<div class="container">
+    <div class="content">
+        <i class="fa fa-address-book"></i><h2>My Address book</h2>
+        <ul class="nav justify-content-center">
+
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#AddNew" href="#"><i class="fa fa-plus"></i> Add</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-eye"></i> View</a>
+            </li>
+           
+            <li class="nav-item">
+               <input class="form-control-sm" type="search" id="search"> <a class="btn"> <i class="fa fa-search"></i> Search</a>
+            </li>
+        </ul>
+        <div class="row">
+            <div class="col-sm-4 col-md-6">
+               <h3>Contacts</h2>
+                <div class="contact">
+                    <script>
+                    </script>     
+                </div>
+               
+            </div>
+
+            <div class="col-sm-8 col-md-6">
+                <h3>Details</h2>
+
+                    <div class="detail">
+                        <button id="edit" class="edit btn btn-sm btn-light">
+                            <i class="fa fa-edit"></i>Edit</button>         <button id="delete" class="edit btn btn-sm btn-light">
+                            <i class="fa fa-delete"></i>delete</button>
+                            <br>
+                        <label>Name</label>
+                      <p id="name"> 
+                        Iyeritufu Precious
+                      </p>
+                        <label>Mobile</label>
+                        <p id="phoneno">
+                            090873645362
+                        </p>
+                        <label>Address</label>
+                        <p>
+                            <address id="address">
+
+                            </address>
+                           
+                        </p>
+                        <label>fax</label>
+                      <input type="hidden" id="Cid" value=""> 
+                            
+                      
+                    </div>
+            </div>
+        </div>
+       
+    </div>
+  
+    <div class="modal fade" id="AddNew"> 
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                   <h2 class="modal-title">Create A new Contact</h2>  <button class="close" type="button" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="Nname" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone number</label>
+                        <input type="text" id="Nphone" class="form-control" >
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="Nemail" class="form-control" >
+                    </div>
+                    <div class="form-group">
+                        <textarea id="Naddress" class="form-control">Hussey Collage Compound Warri</textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                                        <button type="button" id="addNew" class="btn btn-danger" > Ok</button>
+
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Header Goes Here</h2>
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    Body Stuff Goes Here
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/fontawesome-all.js"></script>
+
+</html>
